@@ -1,0 +1,84 @@
+{% load static %}
+
+<style>
+    .qr_code {
+
+    margin-top:20px
+
+    }
+
+    .jpg_tp_pdf {
+
+    margin-top:20px
+
+    }
+    .youtube_download {
+
+    margin-bottom:20px
+
+    }
+
+
+
+</style>
+
+<section id="featured" class="featured">
+    <div class="container">
+
+
+        <div class="row">
+            <div class="qr_code col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="card">
+                    <img src="{% static 'reformation/img/qr-code-2.jpg' %}" height="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="">QR Code</a></h5>
+                        <p class="card-text">Enter a data like links, text and get qr code for your data</p>
+                        <a href="{% url 'qr_code' %}" class="btn" style="background-color: #DF4BC4">Go to Section</a>
+                    </div>
+                </div>
+            </div>
+            <div class="jpg_tp_pdf col-lg-4 col-md-6 d-flex align-items-stretch mb-7 mb-lg-0">
+                <div class="card">
+                    <img src="{% static 'reformation/img/jpg_to_png.png' %}" height="250" class="card-img-top"
+                         alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="">Jpg to Pdf</a></h5>
+                        <p class="card-text">Change your jpg files to pdf without loosing their format.</p>
+                        <a href="{% url 'jpg_to_png' %}" class="btn" style="background-color: #DBA76C">Go to Section</a>
+                    </div>
+                </div>
+            </div>
+            <div class="youtube_download col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="card">
+                    <img src="{% static 'reformation/img/YouTube_icon.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="margin-bottom: 10px; margin-top: 32px;"><a href="">YouTube
+                            Download </a></h5>
+                        <p class="card-text">Enter your links from YouTube and download</p>
+                        <a href="{% url 'yt_download' %}" class="btn" style="margin-top: 22px; background-color: #8F25D3">Go to Section</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="qr_code col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                <div class="card">
+                    <img src="{% static 'reformation/img/link_shortener.png' %}" height="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="">Link Shortener</a></h5>
+                        <p class="card-text">Enter a data like links, and shorten your links.</p>
+                        <a href="{% url 'link_shorter' %}" class="btn" style="background-color: #007aff">Go to Section</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
